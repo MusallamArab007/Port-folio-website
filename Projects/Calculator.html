@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css" title="stylesheet/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h3>Name : Musallam Arab 007</h3>
+    <div class="container">
+        <p>Calculator</p>
+        <form action="" name="form">
+            <div onclick="form.answer.value = form.answer.value.slice(0,-1)"><i class="fa-solid fa-xmark"></i></div>
+            <input type="text" class="answer" name="answer">
+            <br>
+            <input type="button" onclick="form.answer.value += '7'" class="button" value="7">
+            <input type="button" onclick="form.answer.value += '8'" class="button" value="8">
+            <input type="button" onclick="form.answer.value += '9'" class="button" value="9">
+            <input type="button" onclick="form.answer.value += '+',plus()" class="button lblue pluss" value="+">
+            <br>
+            <input type="button" onclick="form.answer.value += '4'" class="button" value="4">
+            <input type="button" onclick="form.answer.value += '5'" class="button" value="5">
+            <input type="button" onclick="form.answer.value += '6'" class="button" value="6">
+            <input type="button" onclick="form.answer.value += '-'" class="button lblue" value="-">
+            <br>
+            <input type="button" onclick="form.answer.value += '1'" class="button" value="1">
+            <input type="button" onclick="form.answer.value += '2'" class="button" value="2">
+            <input type="button" onclick="form.answer.value += '3'" class="button" value="3">
+            <input type="button" onclick="form.answer.value += '*'" class="button lblue" value="*">
+            <br>
+            <input type="button" onclick="form.answer.value = ''" class="button margntop change" value="C">
+            <input type="button" onclick="form.answer.value += '0'" id="zero" class="button margntop" value="0">
+            <input type="button" onclick="form.answer.value += '/'" class="button margntop" value="/">
+            <input type="button" onclick="form.answer.value += '' , form.answer.value = eval(form.answer.value) , equal()" class="button equals margntop lblue" value="=">
+        </form>
+    </div>
+
+
+    <script src="Calculator.js"></script>
+</body>
+</html>

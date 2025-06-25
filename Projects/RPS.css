@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(199, 37, 37);
+}
+.container{
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(241, 97, 97);
+    color: rgb(248, 252, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 5px rgb(182, 61, 61);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 15%;
+    float: left;
+}
+.image{
+    /* visibility: hidden?; */
+    /* margin: 15px 9px 0px; */
+    width: 90px;
+    height: 90px;
+    /* position: relative;
+    top: 2px;
+    right: 1px; */
+    /* background-color: aliceblue; */
+    border-radius: 50%;
+}
+#image1{
+    position: relative;
+    /* bottom: 5px; */
+    right: 2px;
+}
+#image2{
+    position: relative;
+    /* bottom: 5px; */
+    right: 3px;
+}
+#image3{
+    position: relative;
+    top: 0px;
+    right: 1px;
+}
+.gameText{
+    margin: 5px 5px 50px;
+}
+img:hover{
+    background-color: rgb(228, 203, 203);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+button:hover{
+    background-color: rgb(228, 203, 203);
+}
+label{
+    margin-left: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#para{
+    margin-left: 0%;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    /* border: 3px solid black; */
+}
+button{
+    margin: 15px 9px 0px;
+    width: 100px;   
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+.tableDiv{
+    float: left;
+    clear: left;
+    margin-top: 0%;
+    position: relative;
+    bottom: 440px;
+    left: 0px;
+    margin-left: 800px;
+    width: 0px;
+    /* height: 500px; */
+    border: 2px solid black;
+}
+table{
+    /* margin: 5px 20px 3px; */
+    padding: 5px;
+}
+#tableBOdy{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(42, 165, 126);
+    /* border: 2px solid black; */
+    position: relative;
+    left: 130px;
+    top: 10px;
+}
+
+#name{
+    margin-left: 260px;
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+    color: wheat;
+}
+
+table tr th{
+    color: whitesmoke;
+    font-size: 1.6rem;
+    padding: 10px;
+}

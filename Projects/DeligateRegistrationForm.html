@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deligate Registration Form</title>
+    <link rel="stylesheet" href="DeligateRegistrationForm.css">
+</head>
+<body>
+    <div class="container">
+        <div id="name"><h3>Deligate Registration Form - By Musallam Arab 007</h3></div>
+        <div>
+            <p id="p1">HOW MANY DELIGATES TO REGISTER</p>
+            <select name="" id="select1" class="select" onchange="registration()">
+                <option value="">Select Number of Deligates to Register...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <hr align="left">
+        </div>
+        
+
+        <!-- <div class="tableDiv">
+            <table class="table"  style="text-align: left;" border="1" cellspacing="0" width="900px" cellpadding="8px">
+                <tr><th colspan="3"> No of Delegate = 1</th></tr>
+                <tr><th colspan="3" id="delegate"> Delegate</th></tr>
+                <tr>
+                    <th>Solution</th>
+                    <th>Deligate First Name</th>
+                    <th>Deligate Last Name</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>Delagate Telephone</th>
+                    <th>Delegate Job Title</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Delegate Password Number</th>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th>Product And Fees</th>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+
+            <div class="summary">
+                <table id="table2" border="1" cellspacing="0" cellpadding="10px" width="300px">
+                    <tr><th>PURCHASE SUMMARY</th></tr>
+                    <tr><td><label for="" style="text-decoration-line: underline;">Total: </label></td></tr>
+                </table>
+            </div>
+        </div> -->
+
+        <div id="show_deligate_registration_form1"></div>
+        <div id="showtotal"></div>
+        <div id="next_button_form"></div>
+        <div id="show_button"></div>
+        <div id="bill"></div>
+        <button onclick="total()">Show Grand Total</button>
+        <button id="next" onclick="nextbtn()">Next</button>
+        <button id="show" onclick="showbtn()">Show</button>
+        
+        
+    </div>
+</body>
+<script src="DeligateRegistrationForm.js"></script>
+</html>

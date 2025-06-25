@@ -1,0 +1,102 @@
+ body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+ }
+ .container{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    /* padding: 20px; */
+    width: 300px;
+    height: 390px;
+    margin-top: 30px;
+    background-color: rgb(37, 33, 33);
+ }
+ h3{
+    font-size: larger;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    height: 20px;
+    /* border: 2px solid black; */
+    margin-bottom: 0px;
+ }
+ .container p{
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    /* background-color: aliceblue; */
+    color: aliceblue;
+    margin-bottom: 0px;
+    margin-left: -10px;
+ }
+ .container form{
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 13px;
+ }
+ .container form .answer{
+    width: 255px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 5px;
+    text-align: right;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-bottom: 15px;
+ }
+ .button{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid blueviolet; */
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: blueviolet;
+    font-size: larger;
+    color: white;
+    font-weight: 500;
+ }
+ .button:hover{
+    background-color: rgb(195, 148, 238);
+}
+form .lblue{
+    margin-left: 8px;
+    background-color: rgb(152, 124, 181);
+    color: black;
+}
+form .lblue:hover{
+    background-color: rgb(208, 198, 218);
+}
+form .margntop{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    background-color: rgb(152, 124, 181);
+    color: black;
+}
+form .margntop:hover{
+    background-color: rgb(208, 198, 218);
+}
+form #zero{
+    background-color: blueviolet;
+    color: white;
+}
+form #zero:hover{
+    background-color: rgb(195, 148, 238);
+}
+i{
+    position: absolute;
+    top: 20.5%;
+    left: 42%;
+    ;
+}
