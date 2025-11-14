@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Design | Musallam Arab 007</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main-header {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+      .design {
+        position: relative;
+        width: 35rem;
+        height: 35rem;
+      }
+      .design > *,
+      .blend > * {
+        position: absolute;
+        width: 35rem;
+        height: 35rem;
+      }
+      #rotateborder {
+        border: 15px #323946 solid;
+        border-radius: 0px 70px 0px 70px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+        /* background-color: aqua; */
+      }
+      .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+      .data-white {
+        background-color: #fff;
+      }
+      .blend {
+        mix-blend-mode: multiply;
+      }
+      img {
+        object-fit: cover;
+      }
+      .design > img {
+        box-shadow: 0 0 20px #bac3c3;
+      }
+      /* #logo-img{
+        margin-right: 30px;
+      } */
+      .logo{
+        margin-left: 15px;
+        color:#fff;
+        /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+      }
+      .mi-logo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-size: large;
+        text-align: center;
+        /* font-weight: 900; */
+        /* border: 2px solid #bac3c3; */
+        border: none;
+        box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+        border-radius: 10px 0 10px 0;
+        padding: 5px;
+      }
+      #readmore{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="sub-div">
+          <!-- <img style="width: 2rem; height: 2rem;" class="logoImg" src="images/mi_logo9.png" alt="" id="logo_img"> -->
+           
+           <span class="mi-logo">MI</span><a href="#" class="logo">Musallam - <span>Innovation</span></a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's me</h3>
+        <h1>Musallam Khaled Basolan</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          hey..! <br> Welcome to my first Portfolio Website, Thanks for visiting here <br> Have a good day
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/musallam.arab.1"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <div class="main-header">
+          <div class="design">
+            <img src="images/home.jpg" alt="" />
+            <div id="rotateborder"></div>
+            <div class="grid">
+              <div class="data-white"></div>
+              <div></div>
+              <div></div>
+              <div class="data-white"></div>
+            </div>
+
+            <div class="blend">
+              <img src="images/home.jpg" alt="" />
+              <div class="grid">
+                <div></div>
+                <div class="data-white"></div>
+                <div class="data-white"></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <div class="main-header">
+          <div class="design">
+            <img src="images/home.jpg" alt="" />
+            <div id="rotateborder"></div>
+            <div class="grid">
+              <div class="data-white"></div>
+              <div></div>
+              <div></div>
+              <div class="data-white"></div>
+            </div>
+
+            <div class="blend">
+              <img src="images/home.jpg" alt="" />
+              <div class="grid">
+                <div></div>
+                <div class="data-white"></div>
+                <div class="data-white"></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>me</span></h2>
+        <h3>Full Stack Web Developer</h3>
+        <p id="about_content">
+          I am Musallam Khaled Basolan, currently pursuing my Bachelor of Engineering (B.E.) in Computer Science and Engineering from Everest College of Engineering.
+          I completed my 10th from St. Xavier’s High School and my 12th from Sir Sayyed College.
+
+          I have a strong foundation in programming and have completed a Diploma in C, C++, and Java, securing an A++ grade.
+          Along with programming, I have developed a keen interest and solid skills in web design and development, creating several projects using HTML, CSS, and JavaScript.
+
+          I am passionate about learning new technologies and continuously improving my technical and creative abilities.
+          My goal is to secure a challenging and rewarding position in the IT sector, where I can contribute effectively to innovative projects and grow as a professional developer.
+        </p>
+        <a class="btn" id="readmore" onclick="changereadmore()">Read More</a>
+        
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            I create modern and responsive websites that look great on all devices. My focus is on clean design, smooth user experience, and functionality that meets your needs. <br> Code, Create, Innovate.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            I create eye-catching designs that communicate ideas clearly and beautifully. From logos and posters to social media graphics, I focus on creativity, color balance, and professional presentation.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            I help businesses grow online through effective digital marketing strategies. From social media management to SEO and advertising, I focus on building brand visibility and driving real results.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      
+      <div class="portfolio-container">
+
+        <div class="portfolio-box">
+          <img src="project_images/discountCalculatorProject_img.png" />
+          <div class="portfolio-layer">
+            <h4>Discount Calculator</h4>
+            <p>
+              “A simple way to calculate real offers.”
+              “Check your deal in seconds.”
+              “No confusion—just quick discount results.”
+            </p>
+            <a href="project_source/Discount Calculator/discount_calculator2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/Calculator_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4> Calculator</h4>
+            <p>
+              “Add, subtract, multiply, divide—done!”
+              <!-- “A simple tool to crunch your numbers.” -->
+              “Quick math in your browser.”
+              “Do your daily calculations with ease.”
+              “Easy to use. Easy to love.”
+            </p>
+            <a href="project_source/Calculator/Calculator.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        
+        <div class="portfolio-box">
+          <img src="project_images/todoList_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Todo List</h4>
+            <p>
+              “A simple way to stay organized.”
+              “Keep track of what matters most.”
+              “Your mini planner for everyday goals.”
+              “Don’t just plan—get things done!”
+            </p>
+            <a href="project_source/Todo List/TodoList.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/Drum_kits_Project_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Drum Kits</h4>
+            <p>
+              “Feel the rhythm at your fingertips!”
+              “Turn your keyboard into a mini drum set.”
+              “Tap. Play. Rock the beat.”
+              “Create beats like a pro—anytime, anywhere!”
+            </p>
+            <a href="project_source/Drum Kits/Drum_kits.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/RPS_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Rock Paper Scissor Game</h4>
+            <p>
+              “A classic game of luck and logic!”
+              “Play, predict, and prove your skill.”
+              “Quick reflexes. Smart choices. Instant fun.”
+            </p>
+            <a href="project_source/RPS game/RPS2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/proposal_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Proposal</h4>
+            <p>
+              “A simple and elegant way to express your feelings.”
+              “Where emotion meets design.”
+              “A digital touch to a heartfelt moment.”
+              "genuinely expressive.”
+              “Say it with style and love.”
+            </p>
+            <a href="project_source/Proposal/proposal2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/ImageGalleryProject_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Image Gallery</h4>
+            <p>
+              “Explore your favorite photos in one place.”
+              “A mini showcase for your memories.”
+              “Your personal photo wall—digitized.”
+              “Display images beautifully, effortlessly.”
+            </p>
+            <a href="project_source/Image Gallery/Image_gallery2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        
+        <div class="portfolio-box">
+          <img src="project_images/image_slider_project_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Image Slider</h4>
+            <p>
+              “Smooth image transitions made simple.”
+              “A seamless way to showcase your visuals.”
+              “Elegant design meets smooth functionality.”
+              “Auto-sliding gallery for modern websites.”
+            </p>
+            <a href="project_source/Image Slider/Image_slider3.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-box">
+          <img src="project_images/blurredPoppup_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Blurred Poppup Window</h4>
+            <p>
+              “Simple popup with a cool blur effect.”
+              “Click to see the blur magic happen!”
+              “Interactive popup that looks modern and clean.”
+              <!-- “Enhance your web page with a touch of style.”
+              “A tiny project with a big visual impact.” -->
+            </p>
+            <a href="project_source/Blurred Poppup/Blurred_background_popup.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-box">
+          <img src="project_images/Random_color_generation_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Random Color Generator</h4>
+            <p>
+              <!-- “Tap the button and watch the magic happen.” -->
+              “Fun way to explore random colors instantly.”
+              “Discover new hues with every click.”
+              “Simple, colorful, and full of surprises.”
+            </p>
+            <a href="project_source/Random Color Generator/Random_color_generator.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/Random_photo_generation_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Random Photo Generator</h4>
+            <p>
+              “Generate fresh, random photos with one click.”
+              <!-- “Dynamic, fast, and beautifully random.” -->
+              “Because every click deserves a surprise.”
+              <!-- “Discover new visuals, one tap at a time.” -->
+              “A fun way to explore random photography.”
+            </p>
+            <a href="project_source/Random Photo Generator/Random_photos.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-box">
+          <img src="project_images/RealTimeCharacterCounter_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Real-Time Charactor Counter</h4>
+            <p>
+              “Track your text length instantly as you type.”
+              <!-- “Real-time input monitoring made simple.” -->
+              “Perfect tool for forms, limits, and live feedback.”
+              <!-- “Helps you stay within limits, easily.” -->
+            </p>
+            <a href="project_source/Real-Time Character Counter/Real_time_charactor_counter.HTML" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/SumGame_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Sum-Game</h4>
+            <p>
+              “A simple game to practice your math skills.”
+              “Test your addition speed in a fun way.”
+              “Perfect mini-game to boost your brainpower.”
+              “Learn, play, and enjoy.”
+            </p>
+            <a href="project_source/Sum Game/sumGame2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/substractionGame_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Substraction-Game</h4>
+            <p>
+              <!-- “A simple game to practice subtraction easily.” -->
+              “Play, learn, and get better at math.”
+              “Fun way to test your math speed.”
+              “Perfect mini-game to make learning exciting.”
+            </p>
+            <a href="project_source/Substraction Game/substractionGame.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/multiplicationGame_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Multiplication-Game</h4>
+            <p>
+              “Interactive game for learning times tables easily.”
+              “Play, learn, and improve your math.”
+              “Simple game to make multiplication exciting.”
+            </p>
+            <a href="project_source/Multiplication Game/multiplicationGame.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/digital_clock_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Digital Clock</h4>
+            <p>
+              “Track hours, minutes, and seconds effortlessly.”
+              “Minimal design, maximum functionality.”
+              “Track time in a fun, interactive way.”
+            </p>
+            <a href="project_source/Digital Clock/Digital_Clock.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/digital_clock_img2.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Track real-time hours, minutes, and seconds.”
+              “A modern digital clock to keep you on track.”
+              “Time displayed with style and simplicity.”
+              “Elegant, real-time updates every second.”
+            </p>
+            <a href="project_source/Digital Clock2/Digital_Clock2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/Task_Sheduler_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Task Scheduler</h4>
+            <p>
+              “Organize your day with a simple task scheduler.”
+              “Plan, schedule, and manage tasks effortlessly.”
+              “Minimal design, maximum productivity.”
+              “Smart task management made easy.”
+            </p>
+            <a href="project_source/Task Scheduler/Task_Scheduler.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/sorting_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Sorting Form</h4>
+            <p>
+              “Sort and organize products effortlessly.”
+              “A responsive interface for smart product management.”
+              “Clean design with intuitive sorting functionality.”
+            </p>
+            <a href="project_source/Sorting Form/Sort_filter_Form2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-box">
+          <img src="project_images/ValidationForm_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Validation Form</h4>
+            <p>
+              “Ensure accurate user input with smart validation.”
+              <!-- “Learn to validate user input with ease.” -->
+              “Instant feedback to help users fill forms correctly.”
+              “Easy-to-use form with friendly error messages.”
+            </p>
+            <a href="project_source/Verification Form/validation.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/expense_tracker_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Expense Tracker</h4>
+            <p>
+              “Track your expenses and manage your budget efficiently.”
+              “Clean, responsive design for personal finance management.”
+              <!-- “Monitor spending and plan better with ease.” -->
+              <!-- “Minimal interface, maximum financial clarity.” -->
+              “Professional tool for everyday expense tracking.”
+            </p>
+            <a href="project_source/Expense Tracker/Expense.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/VerificationCodeGenerator_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Verification Code Generator(OTP)</h4>
+            <p>
+              “Simple and responsive OTP generator for validation.”
+              “Ensure safe and quick user authentication.”
+              <!-- “Efficient code generation with real-time verification.” -->
+              “Reliable tool for secure digital interactions.”
+            </p>
+            <a href="project_source/Verification Code Generator/index.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="portfolio-box">
+          <img src="project_images/registration_form_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Registration Form</h4>
+            <p>
+              <!-- “Easy-to-use form for collecting user information.” -->
+              <!-- “A simple project to learn form handling with JavaScript.” -->
+              <!-- “Interactive and beginner-friendly registration interface.” -->
+              <!-- “Learn validation and data collection in one project.” -->
+              “A clean and responsive registration form for any application.”
+              “Collect user data efficiently with real-time validation.”
+              <!-- “Professional and easy-to-use registration interface.” -->
+            </p>
+            <a href="project_source/Registration Form/RegistrationForm.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/DeligateRegistration_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Deligate Registration Form</h4>
+            <p>
+              <!-- “Easy-to-use form for quick delegate registration.” -->
+              “Collect participant details with simplicity.”
+              “Clean layout, clear input, smooth flow.”
+            </p>
+            <a href="project_source/Deligate Registration Form/DeligateRegistrationForm.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="project_images/pagination_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Pagination</h4>
+            <p>
+              “Organize content efficiently with smooth pagination.”
+              “A simple tool to navigate through multiple items.”
+              “Navigate large data sets easily and cleanly.”
+              “Learn to divide and display content page by page.”
+            </p>
+            <a href="project_source/Pagination/pagination.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        
+        <div class="portfolio-box">
+          <img src="project_images/Counter_img.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Counter</h4>
+            <p>
+              “A simple counter with powerful functionality.”
+              “Count it, control it, reset it.”
+              “Click. Count. Repeat.”
+              “Your numbers, your control.”
+            </p>
+            <a href="project_source/Counter/Counter2.html" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <!-- <button id="showMoreBtn" class="btn">Show More</button> -->
+        
+      </div>
+      
+    </section>
+    
+    <!-- contact section design  -->
+    
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" name="" value="Send Message" class="btn" id="" />
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Codingmussu | All Right Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="demo_script.js"></script>
+  </body>
+</html>
