@@ -1,4 +1,4 @@
-const kit = ["crash", "kick", "snare", "tom"];
+const kit = ["Crash", "Kick", "Snare", "Tom"];
 const containerEl = document.querySelector(".container");
 
 
