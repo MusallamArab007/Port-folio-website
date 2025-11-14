@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h3 {
+      color: #007bff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    #counter {
+      font-size: 80px;
+      color: #444;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    .increase {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .increase:hover {
+      background-color: #13942f;
+    }
+    
+    .reset {
+      background-color: #dc3545;
+      color: white;
+    }
+    
+    .reset:hover {
+      background-color: #e10f24;
+    }
+    
+    .decrease {
+      background-color: #6c757d;
+      color: white;
+    }
+    
+    .decrease:hover {
+      background-color: #4e5e66;
+      border: #4e5e66;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        width: 90%;
+      }
+
+      #counter {
+        font-size: 60px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3>Name : Musallam Arab 007</h3>
+  <div class="container">
+    <h1>Counter</h1>
+    <span id="counter">0</span>
+    <div class="btn-container">
+      <button class="increase" onclick="inc()">Increase</button>
+      <button class="reset" onclick="dec()">Decrease</button>
+      <button class="decrease" onclick="res()">Reset</button>
+    </div>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function inc() {
+      count++;
+      updateCounter();
+    }
+
+    function dec() {
+      count--;
+      updateCounter();
+    }
+
+    function res() {
+      count = 0;
+      updateCounter();
+    }
+
+    function updateCounter() {
+      const counter = document.getElementById("counter");
+      counter.textContent = count;
+
+      // Change color based on value
+      if (count > 0) counter.style.color = "#28a745";
+      else if (count < 0) counter.style.color = "#dc3545";
+      else counter.style.color = "#444";
+    }
+  </script>
+</body>
+</html>

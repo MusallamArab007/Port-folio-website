@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  border: 2px solid black;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#wrapper {
+  background-color: #fff5f5;
+  color: #111;
+  width: 430px;
+  padding: 25px 30px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
+}
+
+#wrapper header {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #3f3f3f;
+  margin-bottom: 25px;
+}
+
+#wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-field label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  min-width: 140px;
+}
+
+.input-field input {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 180px;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+form input[type="button"],
+form input[type="reset"] {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+form input[type="button"] {
+  background: linear-gradient(135deg, #007bff, #0044cc);
+  color: #fff;
+}
+
+form input[type="button"]:hover {
+  background: linear-gradient(135deg, #005ce6, #002b80);
+  transform: scale(1.05);
+}
+
+form input[type="reset"] {
+  background: linear-gradient(135deg, #00cc44, #009933);
+  color: #fff;
+}
+
+form input[type="reset"]:hover {
+  background: linear-gradient(135deg, #00e64d, #00802b);
+  transform: scale(1.05);
+}
+
+h3 {
+  color: aqua;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  #wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-field label,
+  .input-field input {
+    width: 100%;
+  }
+
+  form input[type="button"],
+  form input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #wrapper header {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .input-field label {
+    font-size: 16px;
+  }
+
+  .input-field input {
+    font-size: 14px;
+  }
+}

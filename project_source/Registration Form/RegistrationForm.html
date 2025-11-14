@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 213, 158);
+            color: aliceblue;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container-flued{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 90%;
+            width: 100%;
+            /* justify-content: center; */
+        }
+        .section1{
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid grey;
+            height: 28em;
+            width: 300px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(47, 2, 2);
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(255, 213, 158);
+        }
+        .form{
+            padding: 10px;
+            text-align: start;
+            width: 100%;
+        }
+        .section2{
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid grey;
+            height: 28em;
+            width: 500px;
+            text-align: center;
+            background-color: rgb(47, 2, 2);
+        }
+
+        table, tr, th, td{
+            border: 1px solid grey;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        table{
+            border: 1px solid silver;
+            border-collapse: collapse;
+            width: 85%;
+            border-collapse: collapse;
+            margin-left: 30px;
+        }
+
+        .section3{
+            margin: 10px;
+            padding: 20px;
+            /* border: 1px solid grey;
+            border-collapse: collapse; */
+            height: 28em;
+            width: 500px;
+            text-align: center;
+            background-color: rgb(47, 2, 2);
+        }
+        .btn{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+        }
+        select{
+            width: 100%;
+            height: 32px;
+        }
+        .section1 form input{
+            border: none;
+            outline: none;
+        }
+        .section1 form input:focus {
+            border: 2px solid rgb(81, 56, 22);
+            /* background-color: rgba(255, 255, 255, 0.1); */
+            box-shadow: 0 0 5px rgb(255, 213, 158);
+            /* transition: 0.3s; */
+        }
+        .section1 form select{
+            border: none;
+            outline: none;
+        }
+        .section1 form select:focus{
+            border: 2px solid rgb(81, 56, 22);
+            box-shadow: 0 0 5px rgb(255, 213, 158);
+        }
+         @media (max-width: 600px) {
+            .container-flued{
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+           .section1, .section2, .section3{
+                width: 90%;
+                align-items: center;
+                padding: 9px;
+           } 
+           .section1 form div{
+                width: 100%;
+           }
+           .section1 button{
+                width: 95%;
+           }
+           .section2 table{
+                width: 80%;
+                word-wrap: break-word;
+                margin-left: 15px;
+           }
+           .section2 table{
+                width: 80%;
+                word-wrap: break-word;
+           }
+        }
+        .section2 table, .section3 table {
+            width: 100%;
+            margin-left: 0;
+            word-wrap: break-word;
+            table-layout: fixed; /* ensures cells don't overflow */
+        }
+        th, td {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-flued">
+        <div class="section1">
+            <h1>Form</h1>
+            <form action="" class="form">
+                <div><label for="">Name : </label><input type="text" id="name"></div><br>
+                <div><label for="">email : </label><input type="text" id="email"></div><br>
+                <div><label for="">Customer Type : </label>
+                    <select name="" id="select">
+                        <option value="">Select Customer Type </option>
+                        <option value="Existing">Existing</option>
+                        <option value="New">New</option>
+                    </select></div><br>
+                <div style="display: none;"><label for="">Account : <input type="text" id="Account"></label></div><br>
+            </form>
+            <div><button class="btn btn-success submit_btn" id="submit_btn" onclick="update_table()">submit</button></div><br>
+        </div>
+
+        <div class="section2">
+            <table>
+                <h1>Existing Customers</h1>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Account</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section3">
+            <table>
+                <h1>New Customers</h1>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody2">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="RegistrationForm.js"></script>
+</body>
+</html>

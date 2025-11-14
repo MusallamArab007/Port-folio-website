@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Girlfriend 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #ff3366;
+      margin-bottom: 10px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    h3 {
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081; }
+      to { text-shadow: 0 0 20px #ff3366, 0 0 40px #ff80ab; }
+    }
+
+    .button {
+      display: flex;
+      gap: 20px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    #yes {
+      background-color: #ff4d79;
+      color: white;
+      box-shadow: 0 0 10px rgba(255, 77, 121, 0.8);
+    }
+
+    #yes:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 77, 121, 1);
+    }
+
+    #no {
+      background-color: #ffb3c1;
+      color: white;
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: absolute;
+      color: #ff4d79;
+      font-size: 20px;
+      animation: float 5s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-800px) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    #loveImg{
+      border: none;
+      outline: none;
+      box-shadow: 0 0 5px #ff80ab, 0 0 10px #ff4081;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <h2>I Love You 💖</h2>
+    <h3>Will you be Mine forever?</h3>
+    <div class="button">
+      <input type="submit" value="Yes 😍" id="yes">
+      <input type="submit" value="No 😅" id="no">
+    </div>
+  </form>
+
+  <script>
+    const yesButton = document.getElementById("yes");
+    const noButton = document.getElementById("no");
+    const cta = document.querySelector(".button");
+
+    noButton.addEventListener("mouseenter", () => {
+      const yesIndex = Array.from(cta.children).indexOf(yesButton);
+      const noIndex = Array.from(cta.children).indexOf(noButton);
+
+      if (yesIndex < noIndex) {
+        cta.insertBefore(noButton, yesButton);
+      } else {
+        cta.insertBefore(yesButton, noButton);
+      }
+    });
+
+    // yesButton.addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   var name = prompt("Pls Enter Your Name here");
+    //   if (name != ""){
+    //     console.log (name);
+    //     document.body.innerHTML = `
+    //     <div style="text-align:center; color:#fff;">
+    //       <h1 style="font-family:'Dancing Script', cursive; font-size:3rem;">Yay! ❤️</h1>
+    //       <p style="font-size:1.5rem;">Thank You..! ${name.value}🥰 You just made me the happiest person in the world!</p>
+    //       <img src="images/loveGif2_img.gif" id="loveImg" alt="Love GIF" width="400rem">
+    //     </div>
+    //   `;
+    //   }
+      
+    // });
+
+    yesButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  var name = prompt("Pls Enter Your Name here ❤️");
+  if (name && name.trim() !== "") {
+    document.body.innerHTML = `
+      <div style="text-align:center; color:#fff;">
+        <h1 style="font-family:'Dancing Script', cursive; font-size:3rem;">Yay! ❤️</h1>
+        <p style="font-size:1.5rem;">Thank You..! 💗'${name}'💗, </br> 🥰 I'm very happy to have you in my life.! 😊</p>
+        <img src="images/loveGif2_img.gif" id="loveImg" alt="Love GIF" width="400rem">
+      </div>
+    `;
+    // document.body.style.backgroundImage = 'url("images/love.jpg")';
+    // document.body.style.backgroundSize = "cover";
+    // document.body.style.backgroundPosition = "center";
+  }
+});
+
+
+    // Floating heart generator
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>

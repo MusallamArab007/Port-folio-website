@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="RPS2.css" />
+</head>
+<body>
+  <h1 id="name">Rock Paper Scissors</h1>
+
+  <div class="container">
+    <h2 class="gameText">Make Your Move!</h2>
+    <p id="timer">⏱️ Time: <span id="timeLeft">10</span>s</p>
+
+    <div class="buttons">
+      <button id="rck"><img src="images/Rock.jpg" class="image"></button>
+      <button id="ppr"><img src="images/paper.png" class="image"></button>
+      <button id="ssrs"><img src="images/scissors.png" class="image"></button>
+    </div>
+
+    <p id="playerText">Player: -</p>
+    <p id="computerText">Computer: -</p>
+    <p id="para">Result will appear here...</p>
+  </div>
+
+  <div class="tableDiv">
+    <h2>Game History</h2>
+    <table id="scoreTable">
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>Player</th>
+          <th>Computer</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <div class="scoreboard">
+      <p>🏆 Player Wins: <span id="playerScore">0</span></p>
+      <p>💻 Computer Wins: <span id="computerScore">0</span></p>
+      <p>🤝 Ties: <span id="tieScore">0</span></p>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2 id="popup-title">Game Over!</h2>
+      <p id="popup-message"></p>
+      <button id="restartBtn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="RPS2.js"></script>
+</body>
+</html>

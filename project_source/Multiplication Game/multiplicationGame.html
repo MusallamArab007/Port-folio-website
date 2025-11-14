@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Game</title>
+  <link rel="stylesheet" href="multiplicationGame.css" />
+</head>
+<body>
+
+
+  <div class="container">
+
+<select id="difficulty">
+  <option value="select">Select Mode</option>
+  <option value="easy">Easy (0–9)</option>
+  <option value="medium">Medium (10–20)</option>
+  <option value="hard">Hard (20–30)</option>
+</select>
+
+    <div class="innerdiv">
+      <div class="top-bar">
+        <p class="score">Score: <span id="score">0</span>/<span id="totalRounds">0</span></p>
+        <p class="timer">Time: <span id="time">15</span>s</p>
+      </div>
+
+      <p class="randomnumber" id="question">Random Number: 0 + 0</p>
+      <input type="number" class="input" id="input_number" placeholder="Your Answer" />
+      <br />
+      <button id="checkBtn">Check</button>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2> Game Over!</h2>
+      <p id="popup-message"></p>
+      <button id="restartBtn">Restart Game</button>
+    </div>
+  </div>
+
+  <script src="multiplicationGame.js"></script>
+</body>
+</html>

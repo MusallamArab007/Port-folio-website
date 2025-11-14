@@ -1,0 +1,170 @@
+body {
+  background: linear-gradient(135deg, #ff3e3e, #ff0f83);
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#name {
+  font-size: 2.3rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffe;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+#para {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  min-height: 40px;
+}
+
+.tableDiv {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+th {
+  font-size: 1.1rem;
+}
+
+.scoreboard {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#restartBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #4a00e0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#restartBtn:hover {
+  background: #f1f1f1;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 80px;
+    height: 80px;
+  }
+  #name {
+    font-size: 1.8rem;
+  }
+}
+.pop {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+#popup {
+  transition: opacity 0.5s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: scale(0.9);
+}
+#popup:not(.hidden) {
+  opacity: 1;
+  transform: scale(1);
+}
