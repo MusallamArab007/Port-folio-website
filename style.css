@@ -529,6 +529,7 @@ span {
   .home-img {
         flex-direction: column;
         padding: 20px;
+        padding-left: 10%;
     }
 
     /* .design{
@@ -619,3 +620,4 @@ span {
 
 
 }
+
