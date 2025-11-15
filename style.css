@@ -46,7 +46,8 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,7 +55,7 @@ section {
 }
 
 .header.sticky{
-    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.2);
 }
 
 .logo{
@@ -623,6 +624,7 @@ span {
 
 
 }
+
 
 
 
