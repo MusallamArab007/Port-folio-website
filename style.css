@@ -61,9 +61,9 @@ section {
 .logo{
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #1f242d;
+    /* background-color: #1f242d; */
     border: none;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
@@ -624,6 +624,7 @@ span {
 
 
 }
+
 
 
 
