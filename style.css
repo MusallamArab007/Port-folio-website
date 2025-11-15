@@ -31,7 +31,7 @@ html{
 
 body{
     background-color: var(--bg-color);
-    backround-image: url("images/backround7.jpeg");
+    background-image: url("images/backround7.jpeg");
     color: var(--text-color);
 }
 
@@ -623,6 +623,7 @@ span {
 
 
 }
+
 
 
 
