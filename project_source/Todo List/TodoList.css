@@ -103,3 +103,66 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+/* ======== Small Devices (max-width: 400px) ======== */
+@media (max-width: 400px) {
+
+    .todo-app{
+        margin: 50px auto 10px;
+        padding: 25px 20px 40px;
+        max-width: 95%;
+    }
+
+    .todo-app h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .todo-app h2 img{
+        width: 22px;
+        margin-left: 6px;
+    }
+
+    /* .row{ */
+        /* flex-direction: column; */
+        /* align-items: stretch; */
+        /* padding-left: 15px; */
+        /* padding-right: 15px; */
+        /* border-radius: 20px; */
+        /* gap: 10px; */
+    /* } */
+
+    input{
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button{
+        /* width: 100%; */
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    ul li{
+        font-size: 15px;
+        padding: 10px 8px 10px 45px;
+    }
+
+    ul li::before{
+        width: 22px;
+        height: 22px;
+        top: 10px;
+        left: 6px;
+    }
+
+    ul li span{
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        line-height: 32px;
+        top: 4px;
+        right: 4px;
+    }
+}
