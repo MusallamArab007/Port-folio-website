@@ -71,6 +71,120 @@
             padding-top: 0%;
             color: greenyellow;
         }
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(16, 15, 15);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(91, 83, 69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Main container */
+.container-flued{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    min-height: 25em;
+    width: 35%;
+    border-radius: 10px;
+}
+
+/* Inner box */
+.sub-div{
+    padding: 20px;
+    background-color: bisque;
+    border: 1px solid rgb(236, 201, 157);
+    border-radius: 10px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#addTask{
+    background-color: rgb(47, 47, 164);
+    font-size: large;
+}
+
+/* ======================================================
+   💡 MEDIA QUERIES FOR RESPONSIVENESS
+====================================================== */
+
+/* 📱 Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container-flued{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .sub-div{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    input, select{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #addTask{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* 📱 Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .container-flued{
+        width: 70%;
+    }
+}
+
+/* 💻 Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .container-flued{
+        width: 30%;
+    }
+}
+
     </style>
 </head>
 <body>
